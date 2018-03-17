@@ -9,7 +9,7 @@ services:
     - KCP_MODULE=kcpserver
     - KCP_CONFIG=-t 127.0.0.1:SSPORT -l :51500 --sndwnd 1024 --rcvwnd 1024 --mtu 1350 -mode fast2
     - SS_MODULE=ss-server
-    - SS_CONFIG=-s 0.0.0.0 -p SSPORT -m aes-256-cfb -k SSPASSWORD --fast-open
+    - SS_CONFIG=-s 0.0.0.0 -p SSPORT -m chacha20-ietf-poly1305 -k SSPASSWORD --fast-open
     ports:
      - "SSPORT:SSPORT"
      - "51500:51500/udp"
