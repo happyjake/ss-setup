@@ -2,7 +2,7 @@
 
 for ubuntu
 
-    sudo apt-get install make docker-compose
+    sudo apt-get update && sudo apt-get install make docker-compose
 
 
 basic setup
