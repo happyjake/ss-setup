@@ -7,7 +7,7 @@ for ubuntu
 
 basic setup
 
-    make conf pwd="your-password-here" port="12312" 
+    make conf pwd="your-password-here" port="12312" snpsk="snell-psk-here" snport="123123"
     make up
 
 
