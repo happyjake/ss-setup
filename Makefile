@@ -8,7 +8,7 @@ update-images:
 	sudo docker-compose pull
 	sudo docker-compose up --force-recreate --build -d
 	sudo docker image prune -f
-	docker-compose log -f --tail=100
+	docker-compose logs -f --tail=100
 
 stop:
 	sudo docker-compose down
