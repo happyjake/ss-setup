@@ -2,17 +2,13 @@ version: '2'
 
 services:
   ss:
-    image: "mritd/shadowsocks"
+    image: "shadowsocks/shadowsocks-libev"
     restart: always
     environment:
-    - KCP_FLAG=true
-    - KCP_MODULE=kcpserver
-    - KCP_CONFIG=-t 127.0.0.1:SSPORT -l :51500 --sndwnd 1024 --rcvwnd 1024 --mtu 1350 -mode fast2
-    - SS_MODULE=ss-server
-    - SS_CONFIG=-s 0.0.0.0 -p SSPORT -m chacha20-ietf-poly1305 -k SSPASSWORD --fast-open
+     - METHOD=aes-256-gcm
+     - PASSWORD=SSPASSWORD
     ports:
-     - "SSPORT:SSPORT"
-     - "51500:51500/udp"
+     - "8388:SSPORT"
 
   snell:
     image: "happyjake/snell-server:latest"
