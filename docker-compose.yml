@@ -1,0 +1,12 @@
+version: "3"
+services:
+  snell:
+    build: .
+    restart: always
+    environment:
+      - SERVER_HOST=<server ip>
+      - SERVER_PORT=<port>
+      - OBFS=http
+      - PSK=<password>
+    ports:
+      - "<port>:<port>"

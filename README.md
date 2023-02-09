@@ -1,13 +1,7 @@
-# ss server quick setup
+# server quick setup
 
-for ubuntu
+change `<server-ip>`, `<port>`, `<password>` in `docker-compose.yml`
 
-    sudo apt-get update && sudo apt-get install make docker-compose
+then,
 
-
-basic setup
-
-    make conf pwd="your-password-here" port="12312" snpsk="snell-psk-here" snport="123123"
-    make up
-
-
+    make run
