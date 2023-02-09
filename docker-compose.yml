@@ -4,7 +4,7 @@ services:
     build: .
     restart: always
     environment:
-      - SERVER_HOST=<server ip>
+      - SERVER_HOST=0.0.0.0
       - SERVER_PORT=<port>
       - OBFS=http
       - PSK=<password>
