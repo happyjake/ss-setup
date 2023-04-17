@@ -9,4 +9,5 @@ services:
       - OBFS=http
       - PSK=<password>
     ports:
-      - "<port>:<port>"
+      - "<port>:<port>/tcp"
+      - "<port>:<port>/udp"
