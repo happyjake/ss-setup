@@ -3,6 +3,7 @@ services:
   snell:
     build: .
     restart: always
+    network_mode: "host"
     environment:
       - SERVER_HOST=0.0.0.0
       - SERVER_PORT=<port>
