@@ -9,6 +9,5 @@ services:
       - SERVER_PORT=<port>
       - OBFS=http
       - PSK=<password>
-    ports:
-      - "<port>:<port>/tcp"
-      - "<port>:<port>/udp"
+    # When using network_mode: "host", port mappings are not needed
+    # as the container shares the host's network stack
