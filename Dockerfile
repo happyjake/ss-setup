@@ -1,6 +1,6 @@
 FROM alpine:edge as builder
 
-ENV SNELL_VERSION="4.1.1"
+ENV SNELL_VERSION="5.0.0"
 ENV TZ=Asia/Shanghai
 
 RUN apk update \
