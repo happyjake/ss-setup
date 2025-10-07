@@ -1,4 +1,4 @@
-FROM alpine:edge as builder
+FROM alpine:3.21 as builder
 
 ENV SNELL_VERSION="5.0.0"
 ENV TZ=Asia/Shanghai
@@ -6,7 +6,6 @@ ENV TZ=Asia/Shanghai
 RUN apk update \
     && apk add --no-cache \
     unzip \
-    upx \
     && wget -O snell-server.zip https://dl.nssurge.com/snell/snell-server-v${SNELL_VERSION}-linux-amd64.zip \
     && unzip snell-server.zip \
     && mv snell-server /usr/local/bin/

@@ -19,7 +19,7 @@ EOF
 }
 
 
-if [ -z "$@" ]; then
+if [ $# -eq 0 ]; then
   launch
 else
   exec "$@"
