@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This repository contains a Docker-based setup for running a Snell proxy server (v5.0.0). Snell is a proxy protocol developed by Surge Network for fast and secure proxy connections.
+This repository contains a Docker-based setup for running a Snell proxy server (v5.0.1). Snell is a proxy protocol developed by Surge Network for fast and secure proxy connections.
 
 ## Architecture
 
